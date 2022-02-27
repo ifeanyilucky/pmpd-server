@@ -12,7 +12,7 @@ app.use(helmet());
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:3000",
+    origin: "https://thebrick.com.ng",
   })
 );
 
@@ -30,9 +30,10 @@ app.post("/contact", (req, res) => {
               <h3>
                   So we actually have a new message from ${name}
               </h3>
-              <p>
-                 Message: ${message}
-              </p>
+            
+                 <h4>Message:</h4> 
+                 <p>${message}</p>
+              
              
               <p></p>
               <p>
